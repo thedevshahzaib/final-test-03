@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Bakery</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        /* Custom styles for image fallbacks/placeholders */
+        .placeholder-img {
+            background-color: #f3f4f6; /* Light gray background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af; /* Darker gray text */
+            font-size: 0.875rem; /* text-sm */
+            text-align: center;
+            min-height: 150px; /* Default height for product images */
+        }
+        header{
+            background-image: url(https://preview.colorlib.com/theme/cake/img/hero/hero-1.jpg);
+        }
+
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-orange-500 py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo -->
+            <a href="#" class="text-white text-3xl font-bold rounded-md p-2">Cake</a>
+
+            <!-- Navigation (Hidden on small screens, shown on medium and up) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-white hover:text-orange-200 transition-colors duration-300 rounded-md p-2">Home</a>
+                <a href="#" class="text-white hover:text-orange-200 transition-colors duration-300 rounded-md p-2">About</a>
+                <a href="#" class="text-white hover:text-orange-200 transition-colors duration-300 rounded-md p-2">Cakes</a>
+                <a href="#" class="text-white hover:text-orange-200 transition-colors duration-300 rounded-md p-2">Menu</a>
+                <a href="#" class="text-white hover:text-orange-200 transition-colors duration-300 rounded-md p-2">Team</a>
+                <a href="#" class="text-white hover:text-orange-200 transition-colors duration-300 rounded-md p-2">Blog</a>
+                <a href="#" class="text-white hover:text-orange-200 transition-colors duration-300 rounded-md p-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-100 py-20 md:py-32 overflow-hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center px-4">
+            <!-- Text Content -->
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0 z-10">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6 rounded-md p-2">
+                    Making your life sweeter one bite at a time!
+                </h1>
+                <p class="text-xl text-gray-700 mb-8 rounded-md p-2">
+                    Experience the finest cakes and pastries crafted with love and the freshest ingredients.
+                </p>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    View Our Cakes
+                </button>
+            </div>
+
+            <!-- Image (placeholder for the cake image) -->
+            <div class="md:w-1/2 flex justify-center md:justify-end relative -mr-10 md:mr-0 z-0">
+                            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Why Choose Us</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Feature 1 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-500 flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Quality Ingredient</h3>
+                    <p class="text-gray-600">We use only the freshest and finest ingredients.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-500 flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Cakes & Bakes</h3>
+                    <p class="text-gray-600">A wide variety of delicious cakes and baked goods.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-500 flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-1.043-8.734-2.812m17.568-4.872A12.001 12.001 0 0012 4c-3.183 0-6.22-1.043-8.734-2.812"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Event & Party</h3>
+                    <p class="text-gray-600">Perfect for all your special occasions and parties.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-500 flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Custom Order</h3>
+                    <p class="text-gray-600">Personalize your cakes to fit your unique needs.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-500 flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Cake Delivery</h3>
+                    <p class="text-gray-600">Convenient delivery right to your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cakes & Bakes Section (Product Display) -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Cakes & Bakes from the House</h2>
+            <p class="text-lg text-gray-600 mb-12">Our delicious collection of cakes, pastries, and more.</p>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Strawberry Cupcake</h3>
+                        <p class="text-gray-600 mb-4">Delicious cupcake with fresh strawberries.</p>
+                        <span class="text-2xl font-bold text-orange-500">$4.99</span>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<img src="https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Chocolate Muffin</h3>
+                        <p class="text-gray-600 mb-4">Rich chocolate muffin, perfect for any time.</p>
+                        <span class="text-2xl font-bold text-orange-500">$3.50</span>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+         <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Vanilla Cake Slice</h3>
+                        <p class="text-gray-600 mb-4">Classic vanilla cake, light and fluffy.</p>
+                        <span class="text-2xl font-bold text-orange-500">$6.75</span>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<img src="https://images.unsplash.com/photo-1514517521153-1be72277b32f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/D6EAF8/000000?text=Image+Not+Found';"
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Blueberry Tart</h3>
+                        <p class="text-gray-600 mb-4">Sweet and tangy blueberry tart.</p>
+                        <span class="text-2xl font-bold text-orange-500">$5.99</span>
+                    </div>
+                </div>
+
+                <!-- Add more product cards as needed -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Red Velvet Cupcake</h3>
+                        <p class="text-gray-600 mb-4">Classic red velvet with cream cheese frosting.</p>
+                        <span class="text-2xl font-bold text-orange-500">$4.75</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<img src="https://media.istockphoto.com/id/2126934369/photo/summer-fruit-baked-cake-served-on-table-front-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=k1Et8EFrt5-RnClASxYSo3_L-ozQn1-KpyL4eSZ8AzQ=" alt="">                       
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Lemon Meringue Pie</h3>
+                        <p class="text-gray-600 mb-4">Tangy lemon filling with a fluffy meringue top.</p>
+                        <span class="text-2xl font-bold text-orange-500">$7.25</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<img src="https://media.istockphoto.com/id/2030549106/photo/chocolate-lava-cake.webp?a=1&b=1&s=612x612&w=0&k=20&c=a7-l76jr9qzEkn635Ka2BUtlPiV90VRvTI_BqGVIqHo=" alt="">                         
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Carrot Cake</h3>
+                        <p class="text-gray-600 mb-4">Moist carrot cake with cream cheese frosting.</p>
+                        <span class="text-2xl font-bold text-orange-500">$6.50</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+<img src="https://media.istockphoto.com/id/2141073510/photo/orange-cake-with-fruit-citrus-slices-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=rkWKIgyO8xVSk58-asdnG-VPzCkvH4PhFiv4hanQtZ0=" alt="">                        
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cheesecake Slice</h3>
+                        <p class="text-gray-600 mb-4">Creamy cheesecake, a delightful treat.</p>
+                        <span class="text-2xl font-bold text-orange-500">$7.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Made from Your Own Hands / About Us Section -->
+    <section class="py-16 bg-orange-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+            <!-- Image (placeholder for the baker image) -->
+            <div class="md:w-1/2 flex justify-center md:justify-start">
+<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <!-- Text Content -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Made from Your Own Hands</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    At Cake Bakery, every single item is crafted with passion and precision. We believe in the art of baking,
+                    using traditional methods combined with innovative techniques to bring you the freshest and most delicious
+                    treats. Our commitment to quality ingredients and meticulous attention to detail ensures that every bite
+                    is a memorable experience.
+                </p>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Learn More About Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sweet Baker (Team Section) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Sweet Baker</h2>
+            <p class="text-lg text-gray-600 mb-12">Meet Our Talented Team of Bakers</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="flex flex-col items-center bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1542838686-37a508931168?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         onerror="this.onerror=null;this.src='https://placehold.co/150x150/E0F2F7/000000?text=Chef+Anna';"
+                         alt="Chef Anna" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-orange-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Chef Anna</h3>
+                    <p class="text-orange-500">Head Baker</p>
+                    <p class="text-gray-600 mt-2 text-sm">Specializes in intricate cake designs.</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="flex flex-col items-center bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1542838686-37a508931168?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         onerror="this.onerror=null;this.src='https://placehold.co/150x150/F8F0E3/000000?text=Chef+Ben';"
+                         alt="Chef Ben" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-orange-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Chef Ben</h3>
+                    <p class="text-orange-500">Pastry Chef</p>
+                    <p class="text-gray-600 mt-2 text-sm">Master of delicate pastries and tarts.</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="flex flex-col items-center bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1542838686-37a508931168?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         onerror="this.onerror=null;this.src='https://placehold.co/150x150/E3F2F0/000000?text=Chef+Clara';"
+                         alt="Chef Clara" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-orange-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Chef Clara</h3>
+                    <p class="text-orange-500">Decorating Specialist</p>
+                    <p class="text-gray-600 mt-2 text-sm">Brings artistic flair to every creation.</p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="flex flex-col items-center bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1542838686-37a508931168?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         onerror="this.onerror=null;this.src='https://placehold.co/150x150/F0E3F2/000000?text=Chef+David';"
+                         alt="Chef David" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-orange-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Chef David</h3>
+                    <p class="text-orange-500">Baking Assistant</p>
+                    <p class="text-gray-600 mt-2 text-sm">Ensures smooth operations in the kitchen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Client Says (Testimonials Section) -->
+    <section class="py-16 bg-orange-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Client Says</h2>
+            <p class="text-lg text-gray-600 mb-12">Hear what our happy customers have to say about us!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         onerror="this.onerror=null;this.src='https://placehold.co/80x80/FFDDC1/000000?text=User1';"
+                         alt="Client Avatar" class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-orange-300">
+                    <p class="text-gray-700 italic mb-4">
+                        "The cakes from Cake Bakery are simply divine! Every bite is a burst of flavor. Highly recommend their strawberry shortcake."
+                    </p>
+                    <p class="font-semibold text-gray-900">- Jane Doe</p>
+                    <p class="text-sm text-gray-500">Happy Customer</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         onerror="this.onerror=null;this.src='https://placehold.co/80x80/D4EFDF/000000?text=User2';"
+                         alt="Client Avatar" class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-orange-300">
+                    <p class="text-gray-700 italic mb-4">
+                        "I ordered a custom cake for my daughter's birthday, and it exceeded all expectations. Beautiful and delicious!"
+                    </p>
+                    <p class="font-semibold text-gray-900">- John Smith</p>
+                    <p class="text-sm text-gray-500">Event Planner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sweet Moments (Gallery Section) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Sweet moments that will mesmerize.</h2>
+            <p class="text-lg text-gray-600 mb-12">A glimpse into our delightful creations and happy customers.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Gallery Item 1 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img src="https://images.unsplash.com/photo-1609610022054-8328f7bdd40c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRlc2VydHMlMjBmb29kfGVufDB8fDB8fHww" alt="">
+                    
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Birthday Cake</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img src="https://images.unsplash.com/photo-1716552141060-573a71fe723c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGVzZXJ0cyUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="">
+            
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Assorted Pastries</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img src="https://images.unsplash.com/photo-1622494828558-d3614f72b67e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRlc2VydHMlMjBmb29kfGVufDB8fDB8fHww" alt="">
+
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Colorful Cupcakes</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img src="https://images.unsplash.com/photo-1711043484522-ad01c2bd769b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRlc2VydHMlMjBmb29kfGVufDB8fDB8fHww" alt="">
+                    
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Wedding Cake</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img src="https://images.unsplash.com/photo-1703348162451-1d27d2aa0884?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRlc2VydHMlMjBmb29kfGVufDB8fDB8fHww" alt="">
+
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Mini Desserts</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img src="https://images.unsplash.com/photo-1704241485838-82f3ac5c8713?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVzZXJ0cyUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="">
+
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Coffee & Cake</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img src="https://images.unsplash.com/photo-1592992010171-f9d4d40a4981?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzZXJ0cyUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="">
+
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Celebration Treats</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://plus.unsplash.com/premium_photo-1672192165925-aad4313289c1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0cyUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+                         onerror="this.onerror=null;this.src='https://placehold.co/500x500/D1F2EB/000000?text=Custom+Order';"
+                         alt="Gallery Image" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Custom Order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map/Location Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Find Us Here!</h2>
+            <div class="w-full h-96 bg-gray-200 rounded-xl shadow-lg flex items-center justify-center text-gray-500 text-lg overflow-hidden">
+                <!-- Google Map Embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.210450536761!2d-122.41941578468169!3d37.77492947975936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858087f9d8f78d%3A0x6e7e7e7e7e7e7e7e!2sBakery!5e0!3m2!1sen!2sus!4v1678912345678!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="mt-8 text-lg text-gray-700">
+                <p><strong>Address:</strong> 123 Cake Lane, Sweet City, CA 90210</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@cakebakery.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Cake</h3>
+                <p class="text-gray-400 text-sm">
+                    Crafting delicious moments, one bite at a time. We are dedicated to bringing you the finest baked goods.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Our Menu</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                <p class="text-gray-400 mb-2">123 Cake Lane, Sweet City, CA 90210</p>
+                <p class="text-gray-400 mb-2">Phone: (123) 456-7890</p>
+                <p class="text-gray-400">Email: info@cakebakery.com</p>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.002 3.797.048.843.04 1.15.138 1.504.237.664.18 1.23.395 1.746.817.51.42.911.95 1.22 1.55.309.599.53 1.271.655 1.957.124.686.135 2.07.135 3.769v.005c0 2.429-.002 2.784-.048 3.797-.04.843-.138 1.15-.237 1.504-.18.664-.395 1.23-.817 1.746-.42.51-.95 0-1.55 1.22-.599.309-1.271.53-1.957.655-.686.124-2.07.135-3.769.135h-.002c-2.43 0-2.784-.002-3.797-.048-.843-.04-1.15-.138-1.504-.237-.664-.18-1.23-.395-1.746-.817-.51-.42-.911-.95-1.22-1.55-.309-.599-.53-1.271-.655-1.957-.124-.686-.135-2.07-.135-3.769v-.002c0-2.43.002-2.784.048-3.797.04-.843.138-1.15.237-1.504.18-.664.395-1.23.817-1.746.42-.51.95-.911 1.55-1.22.599-.309 1.271-.53 1.957-.655.686-.124 2.07-.135 3.769-.135h.002zM12 5.315c-3.666 0-6.685 3.018-6.685 6.684 0 3.667 3.019 6.685 6.685 6.685 3.666 0 6.685-3.018 6.685-6.685 0-3.666-3.019-6.684-6.685-6.684zm0 11.838c-2.844 0-5.153-2.309-5.153-5.153 0-2.844 2.309-5.153 5.153-5.153 2.844 0 5.153 2.309 5.153 5.153 0 2.844-2.309 5.153-5.153 5.153zm6.805-10.805c-.791 0-1.432.641-1.432 1.432 0 .791.641 1.432 1.432 1.432.791 0 1.432-.641 1.432-1.432 0-.791-.641-1.432-1.432-1.432z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.007-.532A8.318 8.318 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012 10.77v.058a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.188 11.644 11.644 0 008.29 20.251z" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            <p>Copyright &copy;2025 All rights reserved | This template is made with &#x2764; by Shahzaib Siddiqui</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu (Optional, but good for responsiveness) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header button');
+            const navMenu = document.querySelector('header nav');
+
+            mobileMenuButton.addEventListener('click', function() {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-full');
+                navMenu.classList.toggle('left-0');
+                navMenu.classList.toggle('w-full');
+                navMenu.classList.toggle('bg-orange-500');
+                navMenu.classList.toggle('py-4');
+                navMenu.classList.toggle('space-y-4');
+                navMenu.classList.toggle('items-center');
+            });
+        });
+    </script>
+</body>
+</html>
